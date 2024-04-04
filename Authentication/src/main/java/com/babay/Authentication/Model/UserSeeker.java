@@ -1,12 +1,10 @@
-package com.babay.Authentication.model;
+package com.babay.Authentication.Model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
-import java.util.*;
-
+import java.util.Date;
+import java.util.List;
+@Data
 @Getter
 @Setter
 @AllArgsConstructor

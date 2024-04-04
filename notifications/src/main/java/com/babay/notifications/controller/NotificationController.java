@@ -15,8 +15,10 @@ import java.io.InputStream;
 @RestController
 @RequestMapping(value = "/api/send-notification")
 public class NotificationController {
+
+
     @PostMapping
-    public ResponseEntity sendNotification(@RequestBody Notification notification) {
+    public ResponseEntity<?> sendNotification(@RequestBody Notification notification) {
         if(checkField(notification)) {
             try {
                 if (notification.getUsername() == null)

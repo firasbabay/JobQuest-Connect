@@ -5,117 +5,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d733a1e1-269b-4d6b-8781-532380749a8d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/AuthenticationApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/config/CorsFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/config/JwtAuthFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/config/JwtAuthenticationEntryPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/config/JwtService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/config/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/model/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/model/ApiResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/model/AuthToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/model/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/model/LoginUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/model/UserCenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/model/UserGeneral.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/model/UserSeeker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/proxy/JobCenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/proxy/JobCenterProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/proxy/Notification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/proxy/NotificationProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/proxy/Seeker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/proxy/SeekerProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/repository/UserRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/service/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/test/java/com/babay/Authentication/AuthenticationApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/advisor/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/advisor/src/main/java/com/babay/advisor/AdvisorApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/advisor/src/main/java/com/babay/advisor/Proxy/SeekerProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/advisor/src/main/java/com/babay/advisor/controller/AdvisorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/advisor/src/main/java/com/babay/advisor/model/Job.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/advisor/src/main/java/com/babay/advisor/model/Seeker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/advisor/src/main/java/com/babay/advisor/repository/JobsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/advisor/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/advisor/src/test/java/com/babay/advisor/AdvisorApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application-service/src/main/java/com/babay/applicationsservice/ApplicationsServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application-service/src/main/java/com/babay/applicationsservice/Model/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application-service/src/main/java/com/babay/applicationsservice/Model/Job.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application-service/src/main/java/com/babay/applicationsservice/Model/JobCenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application-service/src/main/java/com/babay/applicationsservice/Model/Notification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application-service/src/main/java/com/babay/applicationsservice/Model/Seeker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application-service/src/main/java/com/babay/applicationsservice/Repository/ApplicationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application-service/src/main/java/com/babay/applicationsservice/controller/ApplicationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application-service/src/main/java/com/babay/applicationsservice/proxy/JobCenterProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application-service/src/main/java/com/babay/applicationsservice/proxy/JobProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application-service/src/main/java/com/babay/applicationsservice/proxy/NotificationProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application-service/src/main/java/com/babay/applicationsservice/proxy/SeekerProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application-service/src/main/java/com/babay/applicationsservice/service/ApplicationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application-service/src/test/java/com/babay/applicationsservice/ApplicationsServiceApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery-server/src/main/java/com/babay/discoveryserver/DiscoveryServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery-server/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery-server/src/test/java/com/babay/discoveryserver/DiscoveryServerApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/job/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/job/src/main/java/com/babay/job/Controller/JobController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/job/src/main/java/com/babay/job/JobApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/job/src/main/java/com/babay/job/Model/Job.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/job/src/main/java/com/babay/job/Repository/JobRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/job/src/main/java/com/babay/job/Service/JobService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/job/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/job/src/test/java/com/babay/job/JobApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jobCenters/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jobCenters/src/main/java/com/babay/jobCenters/Controller/JobCenterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jobCenters/src/main/java/com/babay/jobCenters/JobCentersApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jobCenters/src/main/java/com/babay/jobCenters/Model/jobcenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jobCenters/src/main/java/com/babay/jobCenters/Repository/JobCenterRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jobCenters/src/main/java/com/babay/jobCenters/Service/JobCenterService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jobCenters/src/main/java/com/babay/jobCenters/proxy/JobsProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jobCenters/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jobCenters/src/test/java/com/babay/job/JobApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jobCenters/src/test/java/com/babay/jobCenters/JobCentersApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/src/main/java/com/babay/notifications/CouchDbHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/src/main/java/com/babay/notifications/GmailSender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/src/main/java/com/babay/notifications/NotificationsApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/src/main/java/com/babay/notifications/PdfDocument.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/src/main/java/com/babay/notifications/controller/NotificationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/src/main/java/com/babay/notifications/model/Notification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/src/main/resources/credentials.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/src/test/java/com/babay/notifications/NotificationsApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/search/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/search/src/main/java/com/babay/search/Repository/JobsRepositoryCustom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/search/src/main/java/com/babay/search/Repository/JobsRepositoryCustomImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/search/src/main/java/com/babay/search/Repository/jobsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/search/src/main/java/com/babay/search/SearchApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/search/src/main/java/com/babay/search/controller/SearchController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/search/src/main/java/com/babay/search/model/Job.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/search/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/search/src/test/java/com/babay/search/SearchApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seekers/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seekers/src/main/java/com/babay/seekers/CouchDBhelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seekers/src/main/java/com/babay/seekers/PdfDocument.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seekers/src/main/java/com/babay/seekers/SeekersApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seekers/src/main/java/com/babay/seekers/controller/SeekersController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seekers/src/main/java/com/babay/seekers/model/Seekers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seekers/src/main/java/com/babay/seekers/proxy/ApplicationsProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seekers/src/main/java/com/babay/seekers/repository/SeekersRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seekers/src/main/java/com/babay/seekers/service/SeekersService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seekers/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seekers/src/test/java/com/babay/seekers/SeekersApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Config/JwtAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Config/SecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Controller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Controller/AuthenticationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Model/UserCenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Services/AuthenticationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Services/EndService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Services/Impl/AuthenticationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Services/Impl/EndServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Services/Impl/JWTServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Services/Impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Services/JWTService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/dto/JwtAuthenticationResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/dto/RefreshTokenRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/dto/SigninRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/dto/SignupRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Authentication/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/AuthenticationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/AuthenticationApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/config/CorsFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/config/JwtAuthFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/config/JwtAuthenticationEntryPoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/config/JwtService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/config/WebSecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/controller/AuthController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/model/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/model/ApiResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/dto/ApiResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/model/AuthToken.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/model/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/model/LoginUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/model/UserCenter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/model/UserGeneral.java" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Model/UserGeneral.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/model/UserSeeker.java" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Model/UserSeeker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/proxy/JobCenterProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/proxy/JobCenterProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/proxy/NotificationProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/proxy/NotificationProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/proxy/SeekerProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/proxy/SeekerProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/repository/UserRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/service/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Authentication/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobCenters/src/main/java/com/babay/jobCenters/Controller/JobCenterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/jobCenters/src/main/java/com/babay/jobCenters/Controller/JobCenterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobCenters/src/main/java/com/babay/jobCenters/Service/JobCenterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/jobCenters/src/main/java/com/babay/jobCenters/Service/JobCenterService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notifications/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notifications/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notifications/src/main/java/com/babay/notifications/GmailSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/notifications/src/main/java/com/babay/notifications/GmailSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notifications/src/main/java/com/babay/notifications/controller/NotificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/notifications/src/main/java/com/babay/notifications/controller/NotificationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notifications/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/notifications/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,43 +93,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "Maven.microservices-new [clean,install].executor": "Run",
-    "Maven.microservices-new [clean,verify].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.AdvisorApplication.executor": "Debug",
-    "Spring Boot.ApiGatewayApplication.executor": "Debug",
-    "Spring Boot.ApplicationsServiceApplication.executor": "Debug",
-    "Spring Boot.AuthenticationApplication.executor": "Debug",
-    "Spring Boot.DiscoveryServerApplication.executor": "Debug",
-    "Spring Boot.InventoryServiceApplication.executor": "Debug",
-    "Spring Boot.JobApplication.executor": "Debug",
-    "Spring Boot.JobCentersApplication.executor": "Debug",
-    "Spring Boot.NotificationsApplication.executor": "Debug",
-    "Spring Boot.OrderServiceApplication.executor": "Debug",
-    "Spring Boot.ProductServiceApplication.executor": "Debug",
-    "Spring Boot.SearchApplication.executor": "Debug",
-    "Spring Boot.SeekersApplication.executor": "Debug",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "20",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Desktop/microservices-new/discovery-server",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.configurations.included.in.services": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.microservices-new [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.microservices-new [clean,verify].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AdvisorApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ApiGatewayApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ApplicationsServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.AuthenticationApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.DiscoveryServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.InventoryServiceApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.JobApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.JobCentersApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.NotificationsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.OrderServiceApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ProductServiceApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.SearchApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SeekersApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;20&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Desktop/microservices-new/Authentication/src/main/java/com/babay/Authentication&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -198,11 +138,11 @@
       <recent name="com.babay.inventoryservice" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Desktop\microservices-new\Authentication\src\main\java\com\babay\Authentication" />
       <recent name="C:\Desktop\microservices-new\discovery-server" />
       <recent name="C:\Desktop\microservices-new\seekers" />
       <recent name="C:\Desktop\microservices-new\search" />
       <recent name="C:\Desktop\microservices-new\notifications" />
-      <recent name="C:\Desktop\microservices-new\jobCenters" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Desktop\microservices-new\seekers" />
@@ -324,11 +264,41 @@
       <workItem from="1707231012789" duration="58000" />
       <workItem from="1707260098713" duration="4775000" />
       <workItem from="1710948477369" duration="1891000" />
-      <workItem from="1711035623244" duration="19413000" />
+      <workItem from="1711035623244" duration="32386000" />
+      <workItem from="1711254560927" duration="1140000" />
+      <workItem from="1711255939272" duration="1846000" />
+      <workItem from="1711297607021" duration="9347000" />
+      <workItem from="1711383372767" duration="13281000" />
+      <workItem from="1711415851069" duration="10242000" />
+      <workItem from="1711477655865" duration="17000" />
+      <workItem from="1711643651560" duration="4321000" />
+      <workItem from="1711999519932" duration="1623000" />
+      <workItem from="1712222102124" duration="3989000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/model/Account.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/service/UserServiceImpl.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/service/UserServiceImpl.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

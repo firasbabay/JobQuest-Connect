@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.*;
 
 @Repository
-@FeignClient(name = "seekers")
+@FeignClient(name = "SEEKERS")
 @RibbonClient(name = "seekers")
 public interface SeekerProxy {
     @RequestMapping(value = "/api/seekers", method = RequestMethod.POST)

@@ -1,4 +1,4 @@
-package com.babay.Authentication.model;
+package com.babay.Authentication.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,7 +9,8 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class AuthToken {
-    private String token;
-    private String username;
+public class ApiResponse<T> {
+    private int status;
+    private String message;
+    private Object result;
 }

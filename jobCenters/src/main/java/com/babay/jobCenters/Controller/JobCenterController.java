@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.List;
 
@@ -23,7 +24,8 @@ public class JobCenterController {
     }
     @PostMapping
     public ResponseEntity<jobcenter> createJobCenter(@RequestBody jobcenter jobcenter) throws URISyntaxException {
-        return jobCenterService.createJobCenter(jobcenter);
+        jobcenter createdCenter = jobCenterService.createJobCenter(jobcenter);
+        return ResponseEntity.created(new URI("/api/centers" + createdCenter.getId())).body(jobcenter);
     }
     @DeleteMapping(value = "/{username}")
     public ResponseEntity<jobcenter> deleteJobCenter(@RequestHeader("X-User-Header") String loggedUser,

@@ -23,8 +23,6 @@ import jakarta.mail.internet.InternetAddress;
 import jakarta.mail.internet.MimeBodyPart;
 import jakarta.mail.internet.MimeMessage;
 import jakarta.mail.internet.MimeMultipart;
-import org.springframework.boot.autoconfigure.ldap.embedded.EmbeddedLdapProperties;
-import org.springframework.boot.autoconfigure.security.saml2.Saml2RelyingPartyProperties;
 import org.springframework.stereotype.Component;
 
 import java.io.*;
@@ -39,13 +37,14 @@ import java.util.Properties;
 @Component
 public class GmailSender {
     private static final String SENDER = "babayfiras6@gmail.com";
-    private static final String APPLICATION_NAME = "jobportal";
+    private static final String APPLICATION_NAME = "JobQuest-Connect";
     private static final JsonFactory JSON_FACTORY = GsonFactory.getDefaultInstance();
     private static final String TOKENS_DIRECTORY_PATH = "tokens";
     private static final List<String> SCOPES = Collections.singletonList(GmailScopes.GMAIL_SEND);
     private static final String CREDENTIALS_FILE_PATH = "/credentials.json";
 
-    public static MimeMessage createEmail(String to, String from, String subject, String bodyText) throws MessagingException {
+    public static MimeMessage createEmail(String to, String from, String subject, String bodyText)
+            throws MessagingException {
         Properties props = new Properties();
         Session session = Session.getDefaultInstance(props, null);
 
@@ -58,20 +57,28 @@ public class GmailSender {
         return email;
     }
 
-    public static Message createMessageWithEmail(MimeMessage emailContent) throws MessagingException, IOException {
+    public static Message createMessageWithEmail(MimeMessage emailContent)
+            throws MessagingException, IOException {
         ByteArrayOutputStream buffer = new ByteArrayOutputStream();
         emailContent.writeTo(buffer);
-
         byte[] bytes = buffer.toByteArray();
-        String encodedEmail = Base64.getEncoder().encodeToString(bytes);
-        Message message = new Message();
+        String encodedEmail = Base64.getEncoder().encodeToString(bytes);        Message message = new Message();
         message.setRaw(encodedEmail);
         return message;
     }
 
-    public static void sendMessage(String destination, String subject, String body , InputStream in)
+    public static void sendMessage(String destination, String subject, String body)
             throws MessagingException, IOException, GeneralSecurityException {
+        final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
+        Gmail service = new Gmail.Builder(HTTP_TRANSPORT, JSON_FACTORY, getCredentials(HTTP_TRANSPORT))
+                .setApplicationName(APPLICATION_NAME)
+                .build();
+        Message message = createMessageWithEmail(createEmail(destination, SENDER, subject, body));
+        message = service.users().messages().send("me", message).execute();
+    }
 
+    public static void sendMessage(String destination, String subject, String body, InputStream in)
+            throws MessagingException, IOException, GeneralSecurityException {
         final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
         Gmail service = new Gmail.Builder(HTTP_TRANSPORT, JSON_FACTORY, getCredentials(HTTP_TRANSPORT))
                 .setApplicationName(APPLICATION_NAME)
@@ -80,10 +87,10 @@ public class GmailSender {
         service.users().messages().send("me", message).execute();
     }
 
+
     private static Credential getCredentials(final NetHttpTransport HTTP_TRANSPORT) throws IOException {
         // Load client secrets.
         InputStream in = GmailSender.class.getResourceAsStream(CREDENTIALS_FILE_PATH);
-        assert in != null;
         GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(JSON_FACTORY, new InputStreamReader(in));
 
         // Build flow and trigger user authorization request.
@@ -124,6 +131,7 @@ public class GmailSender {
 
     }
 
+
     public static class InputStreamDataSource implements DataSource {
 
         ByteArrayOutputStream buffer = new ByteArrayOutputStream();
@@ -146,8 +154,18 @@ public class GmailSender {
         }
 
         @Override
+        public String getContentType() {
+            return new MimetypesFileTypeMap().getContentType(name);
+        }
+
+        @Override
         public InputStream getInputStream() throws IOException {
             return new ByteArrayInputStream(buffer.toByteArray());
+        }
+
+        @Override
+        public String getName() {
+            return name;
         }
 
         @Override
@@ -155,14 +173,5 @@ public class GmailSender {
             throw new IOException("Read-only data");
         }
 
-        @Override
-        public String getContentType() {
-            return new MimetypesFileTypeMap().getContentType(name);
-        }
-
-        @Override
-        public String getName() {
-            return name;
-        }
     }
 }

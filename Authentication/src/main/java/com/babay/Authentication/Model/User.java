@@ -1,92 +1,34 @@
-package com.babay.Authentication.model;
-import com.fasterxml.jackson.annotation.JsonIgnore;
+package com.babay.Authentication.Model;
+
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import org.antlr.v4.runtime.misc.NotNull;
+import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import java.util.*;
+import java.util.Collection;
+import java.util.List;
 
+@Data
 @Entity
-@Table(name ="user")
+@Table(name = "users")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Account implements UserDetails {
-    @Override
-    public String toString() {
-        return "Account [id=" + id + ", email=" + email + ", username=" + username + ", password=" + password
-                + ", role=" + role + "]";
-    }
-
+public class User implements UserDetails {
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private long id;
-
-    @Column
-    private String email;
-
-
-    @Column
-
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id ;
+    private String email ;
     private String username;
-
-    @Column
-    @JsonIgnore
-    private String password;
-
-    @Column
-    @Enumerated(EnumType.STRING)
-    private Role role;
-
+    private String password ;
+    private Role role  ;
 
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return List.of(new SimpleGrantedAuthority(role.name()));
-    }
-
-    @Override
-    public boolean isAccountNonExpired() {
-        return false;
-    }
-
-    @Override
-    public String getUsername(){
-        return username ;
-    }
-
-    @Override
-    public String getPassword(){
-        return password ;
-    }
-    @Override
-    public boolean isAccountNonLocked() {
-        return true;
-    }
-
-    @Override
-    public boolean isCredentialsNonExpired() {
-        return true;
-    }
-
-    @Override
-    public boolean isEnabled() {
-        return true;
-    }
-
-
-    public enum Role {
-        ADMIN,
-        SEEKER,
-        JOB_CENTER;
-
     }
     @Override
     public int hashCode() {
@@ -101,6 +43,35 @@ public class Account implements UserDetails {
     }
 
     @Override
+    public String getUsername() {
+        return username;
+    }
+
+    @Override
+    public boolean isAccountNonExpired() {
+        return true;
+    }
+
+    @Override
+    public boolean isAccountNonLocked() {
+        return true;
+    }
+
+    @Override
+    public boolean isCredentialsNonExpired() {
+        return true;
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return true;
+    }
+    @Override
+    public String toString() {
+        return "Account [id=" + id + ", email=" + email + ", username=" + username + ", password=" + password
+                + ", role=" + role + "]";
+    }
+    @Override
     public boolean equals(Object obj) {
         if (this == obj)
             return true;
@@ -108,7 +79,7 @@ public class Account implements UserDetails {
             return false;
         if (getClass() != obj.getClass())
             return false;
-        Account other = (Account) obj;
+        User other = (User) obj;
         if (email == null) {
             if (other.email != null)
                 return false;
@@ -130,4 +101,5 @@ public class Account implements UserDetails {
             return false;
         return true;
     }
+
 }

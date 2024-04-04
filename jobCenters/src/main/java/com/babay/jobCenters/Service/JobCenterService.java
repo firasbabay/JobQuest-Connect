@@ -10,7 +10,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.List;
 
@@ -18,7 +17,7 @@ import java.util.List;
 @Slf4j
 public class JobCenterService {
     @Autowired
-    private static JobCenterRepo jobCenterRepo ;
+    private  JobCenterRepo jobCenterRepo ;
 
     @Autowired
     private JobsProxy jobsProxy ;
@@ -32,9 +31,8 @@ public class JobCenterService {
         return jobCenterRepo.findAll();
     }
 
-    public ResponseEntity<jobcenter> createJobCenter(jobcenter jobcenter) throws URISyntaxException {
-        jobCenterRepo.save(jobcenter);
-        return ResponseEntity.created(new URI("/api/centers" + jobcenter.getId())).body(jobcenter);
+    public jobcenter createJobCenter(jobcenter jobcenter) throws URISyntaxException {
+        return jobCenterRepo.save(jobcenter);
     }
 
     public ResponseEntity<jobcenter> deleteJobCenter(String loggedUser, String username) {

@@ -1,13 +1,10 @@
-package com.babay.Authentication.model;
-
+package com.babay.Authentication.Model;
 
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
+@Data
 @Getter
 @Setter
 @AllArgsConstructor
@@ -23,4 +20,5 @@ public class UserGeneral {
     private String username;
     private String password ;
     private String email ;
+
 }
