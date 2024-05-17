@@ -5,57 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d733a1e1-269b-4d6b-8781-532380749a8d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Config/JwtAuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Config/SecurityConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Controller/AdminController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Controller/AuthenticationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Model/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Model/UserCenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Services/AuthenticationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Services/EndService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Services/Impl/AuthenticationServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Services/Impl/EndServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Services/Impl/JWTServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Services/Impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Services/JWTService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Services/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/dto/JwtAuthenticationResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/dto/RefreshTokenRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/dto/SigninRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/dto/SignupRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiGateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiGateway/src/main/java/com/babay/ApiGateway/ApiGatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiGateway/src/main/java/com/babay/ApiGateway/UserFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiGateway/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiGateway/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiGateway/src/test/java/com/babay/ApiGateway/ApiGatewayApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Config/CORSFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/job/src/main/java/com/babay/job/Proxy/ApplicationProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCenters/src/main/java/com/babay/jobCenters/WebMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Authentication/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/AuthenticationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/AuthenticationApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/config/CorsFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/config/JwtAuthFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/config/JwtAuthenticationEntryPoint.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/config/JwtService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/config/WebSecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/controller/AuthController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/model/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/model/ApiResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/dto/ApiResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/model/AuthToken.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/model/Constants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/model/LoginUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/model/UserCenter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/model/UserGeneral.java" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Model/UserGeneral.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/model/UserSeeker.java" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Model/UserSeeker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/proxy/JobCenterProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/proxy/JobCenterProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/proxy/NotificationProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/proxy/NotificationProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/proxy/SeekerProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/proxy/SeekerProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/repository/UserRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/service/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Authentication/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Services/Impl/AuthenticationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Authentication/src/main/java/com/babay/Authentication/Services/Impl/AuthenticationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application-service/src/main/java/com/babay/applicationsservice/Model/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/application-service/src/main/java/com/babay/applicationsservice/proxy/Job.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application-service/src/main/java/com/babay/applicationsservice/Model/JobCenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/application-service/src/main/java/com/babay/applicationsservice/proxy/JobCenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application-service/src/main/java/com/babay/applicationsservice/Model/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/application-service/src/main/java/com/babay/applicationsservice/proxy/Notification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application-service/src/main/java/com/babay/applicationsservice/Model/Seeker.java" beforeDir="false" afterPath="$PROJECT_DIR$/application-service/src/main/java/com/babay/applicationsservice/proxy/Seeker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application-service/src/main/java/com/babay/applicationsservice/controller/ApplicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/application-service/src/main/java/com/babay/applicationsservice/controller/ApplicationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application-service/src/main/java/com/babay/applicationsservice/proxy/JobCenterProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/application-service/src/main/java/com/babay/applicationsservice/proxy/JobCenterProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application-service/src/main/java/com/babay/applicationsservice/proxy/JobProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/application-service/src/main/java/com/babay/applicationsservice/proxy/JobProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application-service/src/main/java/com/babay/applicationsservice/proxy/NotificationProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/application-service/src/main/java/com/babay/applicationsservice/proxy/NotificationProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application-service/src/main/java/com/babay/applicationsservice/proxy/SeekerProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/application-service/src/main/java/com/babay/applicationsservice/proxy/SeekerProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application-service/src/main/java/com/babay/applicationsservice/service/ApplicationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/application-service/src/main/java/com/babay/applicationsservice/service/ApplicationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/main/java/com/babay/job/Controller/JobController.java" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/main/java/com/babay/job/Controller/JobController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/main/java/com/babay/job/Repository/JobRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/main/java/com/babay/job/Repository/JobRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/main/java/com/babay/job/Service/JobService.java" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/main/java/com/babay/job/Service/JobService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jobCenters/src/main/java/com/babay/jobCenters/Controller/JobCenterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/jobCenters/src/main/java/com/babay/jobCenters/Controller/JobCenterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobCenters/src/main/java/com/babay/jobCenters/Service/JobCenterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/jobCenters/src/main/java/com/babay/jobCenters/Service/JobCenterService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notifications/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notifications/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notifications/src/main/java/com/babay/notifications/GmailSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/notifications/src/main/java/com/babay/notifications/GmailSender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notifications/src/main/java/com/babay/notifications/controller/NotificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/notifications/src/main/java/com/babay/notifications/controller/NotificationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notifications/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/notifications/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobCenters/src/main/java/com/babay/jobCenters/Model/jobcenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/jobCenters/src/main/java/com/babay/jobCenters/Model/jobcenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobCenters/src/main/java/com/babay/jobCenters/proxy/JobsProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/jobCenters/src/main/java/com/babay/jobCenters/proxy/JobsProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seekers/src/main/java/com/babay/seekers/controller/SeekersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/seekers/src/main/java/com/babay/seekers/controller/SeekersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seekers/src/main/java/com/babay/seekers/service/SeekersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/seekers/src/main/java/com/babay/seekers/service/SeekersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tokens/StoredCredential" beforeDir="false" afterPath="$PROJECT_DIR$/tokens/StoredCredential" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +47,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -105,7 +87,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;Spring Boot.AdvisorApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ApiGatewayApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ApiGatewayApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.ApplicationsServiceApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.AuthenticationApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.DiscoveryServerApplication.executor&quot;: &quot;Run&quot;,
@@ -120,7 +102,7 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;20&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Desktop/microservices-new/Authentication/src/main/java/com/babay/Authentication&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Desktop/microservices-new&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -138,15 +120,18 @@
       <recent name="com.babay.inventoryservice" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Desktop\microservices-new\ApiGateway" />
       <recent name="C:\Desktop\microservices-new\Authentication\src\main\java\com\babay\Authentication" />
       <recent name="C:\Desktop\microservices-new\discovery-server" />
       <recent name="C:\Desktop\microservices-new\seekers" />
       <recent name="C:\Desktop\microservices-new\search" />
-      <recent name="C:\Desktop\microservices-new\notifications" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Desktop\microservices-new\seekers" />
       <recent name="C:\Desktop\microservices-new" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.babay.jobCenters" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.babay.order_service.dto" />
@@ -167,11 +152,24 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AuthenticationApplication">
+  <component name="RunManager" selected="Spring Boot.ApiGatewayApplication">
     <configuration name="AdvisorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="advisor" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.babay.advisor.AdvisorApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ApiGateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.babay.ApiGateway.ApiGatewayApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.babay.ApiGateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -239,6 +237,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ApiGatewayApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -274,6 +277,25 @@
       <workItem from="1711643651560" duration="4321000" />
       <workItem from="1711999519932" duration="1623000" />
       <workItem from="1712222102124" duration="3989000" />
+      <workItem from="1712257592799" duration="403000" />
+      <workItem from="1712271726911" duration="55000" />
+      <workItem from="1712298699239" duration="3906000" />
+      <workItem from="1712392503802" duration="2518000" />
+      <workItem from="1712451842280" duration="2260000" />
+      <workItem from="1712554320735" duration="2964000" />
+      <workItem from="1713168352606" duration="601000" />
+      <workItem from="1713171465246" duration="1405000" />
+      <workItem from="1713197945337" duration="606000" />
+      <workItem from="1713529701931" duration="4017000" />
+      <workItem from="1713771976333" duration="42000" />
+      <workItem from="1713778607652" duration="4598000" />
+      <workItem from="1713791396194" duration="22381000" />
+      <workItem from="1714412614272" duration="6066000" />
+      <workItem from="1714655238678" duration="3881000" />
+      <workItem from="1714765863263" duration="5574000" />
+      <workItem from="1715005575553" duration="3092000" />
+      <workItem from="1715280386346" duration="8037000" />
+      <workItem from="1715959925118" duration="1936000" />
     </task>
     <servers />
   </component>

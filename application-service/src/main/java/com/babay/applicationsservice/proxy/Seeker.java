@@ -1,4 +1,4 @@
-package com.babay.applicationsservice.Model;
+package com.babay.applicationsservice.proxy;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
